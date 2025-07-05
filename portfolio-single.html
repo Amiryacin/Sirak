@@ -16,13 +16,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Snow | Work</title>
+    <title>Snow | One Page Agency</title>
 
     <meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
     <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
     <meta name="author" content="nK">
 
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/LOGOS.JPG">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,37 +39,32 @@
 
 </head>
 
-
-
 <body>
 
 
 
 
-    <header class="nk-header nk-header-opaque">
+    <header class="nk-header">
         <!--
         START: Navbar
     -->
-        <nav class="nk-navbar nk-navbar-top">
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top">
             <div class="container">
                 <div class="nk-nav-table">
                     <a href="index.html" class="nk-nav-logo">
-                        <img src="assets/images/logo-light.svg" alt="" width="85" class="nk-nav-logo-onscroll">
-                        <img src="assets/images/logo.svg" alt="" width="85">
+                        <img src="assets/images/LOGOS.SVG" alt="" width="85" class="nk-nav-logo-onscroll">
+                        <img src="assets/images/LOGOS.svg" alt="" width="85">
                     </a>
 
                     <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
                         <li>
-                            <a href="index.html#about">About</a>
+                            <a href="index.html">Accueil</a>
                         </li>
                         <li>
-                            <a href="index.html#contact">Contact</a>
+                            <a href="portfolio.html">Catalogue</a>
                         </li>
                         <li>
-                            <a href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="blog.html">Blog</a>
+                            <a href="blog.html">Panier</a>
                         </li>
                     </ul>
 
@@ -92,14 +87,12 @@
     </header>
 
 
-
-
     <!--
     START: Navbar Mobile
 -->
     <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
         <div class="nk-navbar-bg">
-            <div class="bg-image" style="background-image: url('assets/images/bg-menu.jpg')"></div>
+            <div class="bg-image" style="background-image: url('assets/images/H3.jpg')"></div>
         </div>
         <div class="nk-nav-table">
             <div class="nk-nav-row">
@@ -154,66 +147,207 @@
 
 
 
-        <div class="container">
-            <div class="nk-portfolio-single">
-
-                <div class="nk-gap-4 mb-14"></div>
-                <h1 class="nk-portfolio-title display-4">Video Project</h1>
-                <div class="row vertical-gap">
-                    <div class="col-lg-8">
-                        <div class="nk-portfolio-info">
-                            <div class="nk-portfolio-text">
-                                <p>Nullam lobortis neque turpis, nec tempus sem pharetra at. Donec et quam, ullamcorper velit. Aliquam maximus ullamcorper ligula, at placerat dui hendrerit sed. Sed metus urna, bibendum id tortor, feugiat ipsum. Aliquam vehicula neque sit amet dolor malesuada pretium.</p>
-                                <p>Curabitur tristique, felis ut mattis auctor, elit ante laoreet libero, ac lorem quam vitae libero. Suspen disse aliquet eget risus quis vehicula.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <table class="nk-portfolio-details">
-                            <tr>
-                                <td>
-                                    <strong>Client:</strong>
-                                </td>
-                                <td>Anna Doe</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <strong>Date:</strong>
-                                </td>
-                                <td>06.20.2016</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <strong>Share:</strong>
-                                </td>
-                                <td>
-                                    <a href="#" title="Share page on Facebook" data-share="facebook">Facebook</a>,
-                                    <a href="#" title="Share page on Twitter" data-share="twitter">Twitter</a>,
-                                    <a href="#" title="Share page on Pinterest" data-share="pinterest">Pinterest</a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+        <div class="container" style="margin-top: 20%;">
+            <style>
+                body {
+                  font-family: Arial, sans-serif;
+                  padding: 20px;
+                  max-width: 600px;
+                  margin: auto;
+                  background: #f9f9f9;
+                }
+            
+                .section {
+                  background: white;
+                  padding: 20px;
+                  border-radius: 12px;
+                  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                  margin-bottom: 20px;
+                }
+            
+                .color-button {
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  border: 2px solid transparent;
+                  cursor: pointer;
+                  margin-right: 5px;
+                }
+            
+                .color-button.active {
+                  border-color: black;
+                }
+            
+                label {
+                  font-weight: bold;
+                  display: block;
+                  margin-bottom: 5px;
+                }
+            
+                input[type="range"] {
+                  width: 100%;
+                }
+            
+                select, input {
+                  padding: 5px;
+                  width: 100%;
+                  margin-bottom: 10px;
+                }
+            
+                .preview {
+                  background: #eee;
+                  padding: 15px;
+                  border-radius: 8px;
+                }
+            
+                .btn-valider {
+                  display: block;
+                  width: 100%;
+                  padding: 15px;
+                  background-color: #1e90ff;
+                  color: white;
+                  font-size: 16px;
+                  font-weight: bold;
+                  border: none;
+                  border-radius: 8px;
+                  cursor: pointer;
+                  transition: background-color 0.3s;
+                }
+            
+                .btn-valider:hover {
+                  background-color: #0c70d4;
+                }
+              </style>
+            </head>
+            <body>
+            
+              <h1>Personnalise ton vêtement</h1>
+            
+              <div class="section">
+                <label for="sizeRange">Taille : <span id="sizeLabel">M</span></label>
+                <input type="range" id="sizeRange" min="0" max="4" value="2" />
+              </div>
+            
+              <div class="section">
+                <label for="sleeveLength">Longueur de manche : <span id="sleeveLabel">50</span> cm</label>
+                <input type="range" id="sleeveLength" min="30" max="80" value="50" />
+              </div>
+            
+              <div class="section">
+                <label>Couleur :</label>
+                <div id="colorOptions">
+                  <button class="color-button" data-color="black" style="background:black;"></button>
+                  <button class="color-button" data-color="white" style="background:white;"></button>
+                  <button class="color-button" data-color="red" style="background:red;"></button>
+                  <button class="color-button" data-color="blue" style="background:blue;"></button>
+                  <button class="color-button" data-color="green" style="background:green;"></button>
                 </div>
-                <div class="nk-gap-4 mt-14"></div>
-
-            </div>
+              </div>
+            
+              <div class="section">
+                <label for="fabric">Tissu :</label>
+                <select id="fabric">
+                  <option value="Coton">Coton</option>
+                  <option value="Lin">Lin</option>
+                  <option value="Soie">Soie</option>
+                  <option value="Jean">Jean</option>
+                  <option value="Polyester">Polyester</option>
+                </select>
+              </div>
+            
+              <div class="section">
+                <label for="design">Design :</label>
+                <select id="design">
+                  <option value="Fleur">Fleur</option>
+                  <option value="Tigre">Tigre</option>
+                  <option value="Graffiti">Graffiti</option>
+                  <option value="Logo Minimal">Logo Minimal</option>
+                  <option value="Calligraphie Arabe">Calligraphie Arabe</option>
+                </select>
+              </div>
+            
+              <div class="section preview">
+                <h3>Aperçu de ta personnalisation</h3>
+                <p>Taille : <span id="previewSize">M</span></p>
+                <p>Longueur de manche : <span id="previewSleeve">50</span> cm</p>
+                <p>Couleur : <span id="previewColor">black</span></p>
+                <p>Tissu : <span id="previewFabric">Coton</span></p>
+                <p>Design : <span id="previewDesign">Fleur</span></p>
+              </div>
+            
+              <!-- BOUTON DE VALIDATION -->
+              <button class="btn-valider" onclick="ajouterAuPanier()">Valider et mettre dans le panier</button>
+            
+              <script>
+                const sizes = ["XS", "S", "M", "L", "XL"];
+            
+                const sizeRange = document.getElementById("sizeRange");
+                const sizeLabel = document.getElementById("sizeLabel");
+                const previewSize = document.getElementById("previewSize");
+            
+                sizeRange.addEventListener("input", () => {
+                  const value = sizes[sizeRange.value];
+                  sizeLabel.textContent = value;
+                  previewSize.textContent = value;
+                });
+            
+                const sleeveRange = document.getElementById("sleeveLength");
+                const sleeveLabel = document.getElementById("sleeveLabel");
+                const previewSleeve = document.getElementById("previewSleeve");
+            
+                sleeveRange.addEventListener("input", () => {
+                  sleeveLabel.textContent = sleeveRange.value;
+                  previewSleeve.textContent = sleeveRange.value;
+                });
+            
+                const colorButtons = document.querySelectorAll(".color-button");
+                const previewColor = document.getElementById("previewColor");
+                let selectedColor = "black";
+            
+                colorButtons.forEach(btn => {
+                  btn.addEventListener("click", () => {
+                    colorButtons.forEach(b => b.classList.remove("active"));
+                    btn.classList.add("active");
+                    selectedColor = btn.dataset.color;
+                    previewColor.textContent = selectedColor;
+                  });
+                });
+            
+                const fabricSelect = document.getElementById("fabric");
+                const previewFabric = document.getElementById("previewFabric");
+                fabricSelect.addEventListener("change", () => {
+                  previewFabric.textContent = fabricSelect.value;
+                });
+            
+                const designSelect = document.getElementById("design");
+                const previewDesign = document.getElementById("previewDesign");
+                designSelect.addEventListener("change", () => {
+                  previewDesign.textContent = designSelect.value;
+                });
+            
+                // Initialisation
+                colorButtons[0].click();
+            
+                // Fonction du bouton "mettre dans le panier"
+                function ajouterAuPanier() {
+                  const taille = previewSize.textContent;
+                  const manche = previewSleeve.textContent;
+                  const couleur = previewColor.textContent;
+                  const tissu = previewFabric.textContent;
+                  const design = previewDesign.textContent;
+            
+                  alert(
+                    `✔️ Ton article a été ajouté au panier !\n\n` +
+                    `Taille : ${taille}\n` +
+                    `Manche : ${manche} cm\n` +
+                    `Couleur : ${couleur}\n` +
+                    `Tissu : ${tissu}\n` +
+                    `Design : ${design}`
+                  );
+                }
+              </script>
         </div>
 
-        <img class="nk-img-fit" src="assets/images/portfolio-4-video-thumb.jpg">
-
-        <!-- START: Pagination -->
-        <div class="nk-pagination nk-pagination-center">
-            <div class="container">
-                <a class="nk-pagination-prev" href="#">
-                    <span class="pe-7s-angle-left"></span> Previous Work</a>
-                <a class="nk-pagination-center" href="#">
-                    <span class="nk-icon-squares"></span>
-                </a>
-                <a class="nk-pagination-next" href="#">Next Work <span class="pe-7s-angle-right"></span> </a>
-            </div>
-        </div>
-        <!-- END: Pagination -->
 
 
 
